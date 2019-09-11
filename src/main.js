@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import $ from 'jquery'
 import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import './style/theme.css'
 
 
 Vue.config.productionTip = false

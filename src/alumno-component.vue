@@ -20,7 +20,7 @@
                     <div class="col-md-12">
                         <listado-component :alumnos="listaBusquedaAlumnos">
                             <template v-slot:item="{item, index}"  >
-                                <button @click="VerAlumno(item)" class="btn btn-primary btn-sm"> <i class="fa fa-pencil"></i> </button>
+                                <button @click="VerAlumno(item)" class="btn btn-primary btn-sm mr-1"> <i class="fa fa-pencil"></i> </button>
                                 <button @click="eliminar(index)" class="btn btn-primary btn-sm" ><i class="fa fa-trash"></i></button>
                             </template>
                         </listado-component>
@@ -31,6 +31,7 @@
             
             </template>
         </catalogo-component>
+
         <modal-component>
             <template slot="titulo">
                 <h1 v-if="!editar">Nuevo alumno</h1>
